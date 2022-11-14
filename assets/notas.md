@@ -17,3 +17,10 @@ sail artisan make:migration
 # si nos equivocamos en la migracion con un campo
 sail artisan migrate:rollback        -- deshace la ultima migracion
 
+# creacion de controlador  -- logicas de negocio
+sail artisan make:controller TodosController
+
+- csrf ----> cross site request forgery
+usado para proteger las peticiones de los formularios
+asigna un token a cada formulario, y lo valida al momento de enviar la peticion
+se crea un campo oculto en el formulario con el token -- hidden
