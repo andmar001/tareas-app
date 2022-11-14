@@ -24,3 +24,14 @@ sail artisan make:controller TodosController
 usado para proteger las peticiones de los formularios
 asigna un token a cada formulario, y lo valida al momento de enviar la peticion
 se crea un campo oculto en el formulario con el token -- hidden
+
+# segundo modelo -- categoria
+sail artisan make:model Category -m
+
+# creacion de controlador
+sail artisan make:controller CategoriesController --resource          ---> crea todas las rutas y los metodos en el controlador en blanco
+- el controlador de categorias tendra todas las rutas necesarias para el crud
+
+- Revisar las rutas creadas
+sail artisan route:list
+
