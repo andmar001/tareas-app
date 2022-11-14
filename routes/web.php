@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todos', function () {
-    return 'Hola esta es la ruta de todos';
+Route::get('/todo', function () {
+    return view('app');
 });
